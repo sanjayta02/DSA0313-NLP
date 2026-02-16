@@ -1,0 +1,11 @@
+import nltk
+from nltk.stem import WordNetLemmatizer
+
+nltk.download('wordnet')
+
+lemmatizer = WordNetLemmatizer()
+
+words = ["running", "cars", "better", "studies"]
+
+for word in words:
+    print(word, "->", lemmatizer.lemmatize(word))
